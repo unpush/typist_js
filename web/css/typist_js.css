@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+div.typist-screen {
+  color: #ddd;
+  background-color: #000;
+  width: auto;
+  clear: both;
+  float: left;
+  font-family: 'Osaka−等幅', 'Osaka-Mono', 'ＭＳ ゴシック', 'MS Gothic', monospace;
+  border: groove 3px #53868b;
+  line-height: 125%;
+}
+
+div.typist-frameline {
+  white-space: nowrap;
+  background-color: #53868b;
+  line-height: 130%;
+  padding: 0 0 0 0;
+  border: outset 1px #53868b;
+}
+
+div.typist-screen-inner {
+  padding: 2px;
+}
+
+span.typist-cursor {
+  color: black;
+  background-color: white;
+}
+
+span.typist-bold {
+  font-weight: bold;
+}
+span.typist-underline {
+  text-decoration:underline;
+}
+.typist-negative {
+  color: #000;
+  background-color: #ddd;
+}

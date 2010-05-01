@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+  <head>
+    <title>Typist on Browser</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/typist_js.css" />
+    <script type="text/javascript" src="js/typist_idx.js"></script>
+    <script type="text/javascript" src="js/typist_js.js"></script>
+    <style type="text/css">
+      body {font-family: 'Times New Roman', serif}
+      .typist-controls {
+        float: left;
+        font-family: sans-serif;
+        font-size: 75%;
+        margin: 0.3em 0;
+      }
+      #typist-options dl {
+        margin: 0;
+        padding: 0;
+      }
+      #typist-options dt,dd {
+        display: inline;
+        margin: 0 0 0 0.5em;
+      }
+      #typist-options dt {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body onload="load_typist(document.getElementById('screen'), document.getElementById('vbell'), [document.getElementById('kbd_jp106'), document.getElementById('kbd_us'), document.getElementById('kbd_jpc')]);">
+    <h1>Typist on Browser</h1>
+    <div id="typist-options-hide" class="typist-controls" style="display: block">
+      <a href="javascript:void(0)" onclick="this.parentNode.style.display='none'; document.getElementById('typist-options').style.display='block'">>>環境設定</a>
+    </div>
+    <div id="typist-options" class="typist-controls" style="display: none">
+      <fieldset><legend><a href="javascript:void(0)" onclick="document.getElementById('typist-options').style.display='none'; document.getElementById('typist-options-hide').style.display='block';">環境設定</a></legend>
+        <div id="typist-options-selects">
+          <dl>
+            <dt>キーボードのタイプ:</dt>
+            <dd><input type="radio" name="keytype" id="kbd_jp106" value="j"><label for="kbd_jp106">日本語106</label></dd>
+            <dd><input type="radio" name="keytype" id="kbd_us" value="e"><label for="kbd_us">英語101</label></dd>
+            <dd><input type="radio" name="keytype" id="kbd_jpc" value="k"><label for="kbd_jpc">国産パソコン(PC98等)</label></dd>
+          </dl>
+          <dl>
+            <dt><label for="vbell">ヴィジュアル・ベル:</label></dt>
+            <dd><input type="checkbox" name="vbell" id="vbell" value="1"></dd>
+          </dl>
+        </div>
+      </fieldset>
+    </div>
+    <br clear="all">
+    <div id="screen"></div>
+  </body>
+</html>
