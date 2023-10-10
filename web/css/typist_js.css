@@ -6,7 +6,7 @@ div.typist-screen {
   width: auto;
   clear: both;
   float: left;
-  font-family: 'Osaka−等幅', 'Osaka-Mono', 'ＭＳ ゴシック', 'MS Gothic', monospace;
+  font-family: 'Osaka−等幅', 'Osaka-Mono', 'Monospace', 'ＭＳ ゴシック', 'MS Gothic', monospace;
   border: groove 3px #53868b;
   line-height: 125%;
 }
